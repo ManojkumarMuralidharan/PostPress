@@ -1,4 +1,21 @@
 PostPress::Application.routes.draw do
+<<<<<<< HEAD
+=======
+  resources :commentvotes
+
+  resources :postvotes
+
+  resources :comments
+
+  resources :posts
+
+  resources :categories
+
+  resources :users
+
+  resources :roles
+
+>>>>>>> 20003c590f0485b5219ad7ae96b6f81e4f65b06a
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
