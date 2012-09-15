@@ -1,0 +1,21 @@
+<h1>Listing postvotes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @postvotes.each do |postvote| %>
+  <tr>
+    <td><%= link_to 'Show', postvote %></td>
+    <td><%= link_to 'Edit', edit_postvote_path(postvote) %></td>
+    <td><%= link_to 'Destroy', postvote, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Postvote', new_postvote_path %>

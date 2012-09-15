@@ -1,0 +1,21 @@
+<h1>Listing commentvotes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @commentvotes.each do |commentvote| %>
+  <tr>
+    <td><%= link_to 'Show', commentvote %></td>
+    <td><%= link_to 'Edit', edit_commentvote_path(commentvote) %></td>
+    <td><%= link_to 'Destroy', commentvote, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Commentvote', new_commentvote_path %>
